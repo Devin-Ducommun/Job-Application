@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h1>Job Application</h1>
+        <p>Join the team! Fill out the details below.</p>
+        <fieldset>
+            <div class="name">
+                <h3>Name</h3>
+                <label for="first-name">First Name<input id="first-name" name="first-name" type="text" required /></label>
+                <lable for="last-name">Last Name<input id="last-name" name="last-name" type="text" required /></lable>  
+            </div>
+            <div>
+                <h3>Email</h3>
+                <label for="email">Please enter your email<input id="email" name="email" type="email" placeholder="jondoe@example.com" required /></label>
+            </div>
+            <div>
+                <h3>Phone Number</h3>
+                <label for="number"><input id="number" name="number" type="tel" placeholder="(000)000-0000" required /></label>
+            </div>
+            <div>
+                <h3>Date of Birth</h3>
+                <label for="birth-date"><input id="birth-date" name="birth-date" type="date" required /></label>
+            </div>
+            <div>
+                <h3>Address</h3>
+                <label for="street-address">Street Address<input id="street-address" name="street-address" type="text" required /></label>
+                <label for="street-address2">Street Address Line 2<input id="street-address2" name="street-address2" type="text" /></label>
+                <label for="city">City<input id="city" name="city" type="text" required /></label>
+                <label for="state">State/Province<input id="state" name="state" type="text" required /></label>
+                <label for="zip">Postal/Zip Code<input id="zip" name="zip" type="text" required /></label>
+            </div>
+            <div>
+                <h3>How did you hear about us?</h3>
+                <select name="selector" id="selector" required>
+                    <option value="">Select an option</option>
+                    <option value="1">AD</option>
+                    <option value="2">Social Media </option>
+                    <option value="3">Referral</option>
+                    <option value="4">Other</option>
+                </select>
+            </div>
+            <div>
+                <h3>Resume</h3>
+                <input id="resume" name="resume" type="file" required />
+            </div>
+            <div>
+                <h3>References</h3>
+                <p> Please list two (2) references that are familiar with your work life.</p>
+                <div></div>
+                <h4>Reference</h4>
+                <label for="name">Name<input id="name" name="name" type="text" required /></label>
+                <label for="title">Title<input id="title" name="title" type="text" required /></label>
+                <label for="relationship">Relationship<input id="relationship" name="relationship" type="text" required /></label>
+                <label for="email">Email<input id="email" name="email" type="email" required /></label>
+                <label for="phone-number">Phone Number<input id="phone-number" name="phone-number" type="tel" required /></label>
+                <div></div>
+                <h4>Reference</h4>
+                <label for="name">Name<input id="name" name="name" type="text" required /></label>
+                <label for="title">Title<input id="title" name="title" type="text" required /></label>
+                <label for="relationship">Relationship<input id="relationship" name="relationship" type="text" required /></label>
+                <label for="email">Email<input id="email" name="email" type="email" required /></label>
+                <label for="phone-number">Phone Number<input id="phone-number" name="phone-number" type="tel" required /></label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Submit Application" />
+    </form>
+</body>
+</html>
